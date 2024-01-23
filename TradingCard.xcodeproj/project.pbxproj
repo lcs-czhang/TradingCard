@@ -11,6 +11,8 @@
 		E17981FB2B5EADD3008DC5C5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17981FA2B5EADD3008DC5C5 /* ContentView.swift */; };
 		E17981FD2B5EADD6008DC5C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E17981FC2B5EADD6008DC5C5 /* Assets.xcassets */; };
 		E17982002B5EADD6008DC5C5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E17981FF2B5EADD6008DC5C5 /* Preview Assets.xcassets */; };
+		E179820D2B5EAEDC008DC5C5 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E179820C2B5EAEDC008DC5C5 /* CardView.swift */; };
+		E179820F2B5EAF20008DC5C5 /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E179820E2B5EAF20008DC5C5 /* IntroView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		E17981FA2B5EADD3008DC5C5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E17981FC2B5EADD6008DC5C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E17981FF2B5EADD6008DC5C5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E179820C2B5EAEDC008DC5C5 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		E179820E2B5EAF20008DC5C5 /* IntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				E17981F82B5EADD3008DC5C5 /* TradingCardApp.swift */,
 				E17981FA2B5EADD3008DC5C5 /* ContentView.swift */,
+				E179820C2B5EAEDC008DC5C5 /* CardView.swift */,
+				E179820E2B5EAF20008DC5C5 /* IntroView.swift */,
 				E17981FC2B5EADD6008DC5C5 /* Assets.xcassets */,
 				E17981FE2B5EADD6008DC5C5 /* Preview Content */,
 			);
@@ -138,7 +144,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E17981FB2B5EADD3008DC5C5 /* ContentView.swift in Sources */,
+				E179820F2B5EAF20008DC5C5 /* IntroView.swift in Sources */,
 				E17981F92B5EADD3008DC5C5 /* TradingCardApp.swift in Sources */,
+				E179820D2B5EAEDC008DC5C5 /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
