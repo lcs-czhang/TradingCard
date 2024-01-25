@@ -14,53 +14,51 @@ struct CardView: View {
     let characterDescription: String
     let characterHitPoint: Int
     var body: some View {
-        VStack {
-            ZStack {
-                Image("武将背景")
-                    .resizable()
-                    .ignoresSafeArea()
-                    .scaledToFill()
-                    .overlay(VStack {
+        ZStack {
+            Image("武将背景")
+                .resizable()
+                .ignoresSafeArea()
+                .scaledToFill()
+                .overlay(VStack {
+                    Rectangle()
+                        .foregroundStyle(.black)
+                        .opacity(0.5)
+                        .frame(width: 300.0, height: 60.0)
+                        .overlay(HStack {
+                            Image(forceName)
+                                .resizable()
+                                .scaledToFit()
+                            Text(characterName)
+                                .font(.title)
+                                .foregroundColor(Color.white)
+                            Image("gouyu")
+                                .resizable()
+                                .scaledToFit()
+                            Text("X\(characterHitPoint)")
+                                .font(.title)
+                                .foregroundColor(Color.white)
+                                .padding(.trailing, 10.0)
+                        })
+                    Image(imageName)
+                        .resizable()
+                        .frame(width: 300.0, height: 300.0)
+                    ZStack {
                         Rectangle()
-                            .foregroundStyle(.black)
                             .opacity(0.5)
-                            .frame(width: 300.0, height: 60.0)
-                            .overlay(HStack {
-                                Image(forceName)
-                                    .resizable()
-                                    .scaledToFit()
-                                Text(characterName)
-                                    .font(.title)
-                                    .foregroundColor(Color.white)
-                                Image("gouyu")
-                                    .resizable()
-                                    .scaledToFit()
-                                Text("X\(characterHitPoint)")
-                                    .font(.title)
-                                    .foregroundColor(Color.white)
-                                    .padding(.trailing, 10.0)
-                            })
-                        Image(imageName)
-                            .resizable()
-                            .frame(width: 300.0, height: 300.0)
-                        ZStack {
-                            Rectangle()
-                                .opacity(0.5)
-                            ScrollView(.vertical){
-                                Text(characterDescription)
-                                    .font(.callout)
-                                    .foregroundStyle(.white)
-                                    .padding(25.0)
-                            }
-                            
+                        ScrollView(.vertical){
+                            Text(characterDescription)
+                                .font(.callout)
+                                .foregroundStyle(.white)
+                                .padding(25.0)
                         }
-                        .frame(width: 300.0)
-                })
-            }
+                    }
+                    .frame(width: 300.0)
+            })
         }
-            
     }
+            
 }
+
 
 #Preview {
     CardView(imageName: "jiedabao", forceName: "wu", characterName: "界徐盛", characterDescription: """
