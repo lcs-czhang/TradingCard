@@ -8,11 +8,7 @@
 import SwiftUI
 
 struct CardView: View {
-    let imageName: String
-    let forceName: String
-    let characterName: String
-    let characterDescription: String
-    let characterHitPoint: Int
+    let character: TradingCard
     var body: some View {
         ZStack {
             Image("武将背景")
@@ -25,28 +21,28 @@ struct CardView: View {
                         .opacity(0.5)
                         .frame(width: 300.0, height: 60.0)
                         .overlay(HStack {
-                            Image(forceName)
+                            Image(character.forceName)
                                 .resizable()
                                 .scaledToFit()
-                            Text(characterName)
+                            Text(character.characterName)
                                 .font(.title)
                                 .foregroundColor(Color.white)
                             Image("gouyu")
                                 .resizable()
                                 .scaledToFit()
-                            Text("X\(characterHitPoint)")
+                            Text("X\(character.characterHitPoint)")
                                 .font(.title)
                                 .foregroundColor(Color.white)
                                 .padding(.trailing, 10.0)
                         })
-                    Image(imageName)
+                    Image(character.imageName)
                         .resizable()
                         .frame(width: 300.0, height: 300.0)
                     ZStack {
                         Rectangle()
                             .opacity(0.5)
                         ScrollView(.vertical){
-                            Text(characterDescription)
+                            Text(character.characterDescription)
                                 .font(.callout)
                                 .foregroundStyle(.white)
                                 .padding(25.0)
@@ -61,8 +57,5 @@ struct CardView: View {
 
 
 #Preview {
-    CardView(imageName: "jiedabao", forceName: "wu", characterName: "界徐盛", characterDescription: """
-             破军
-             当你使用【杀】指定一个目标后，你可以发动此技能，将其至多X张牌扣置于该角色的武将牌旁（X为其体力值）；若如此做，当前回合结束后，该角色获得这些牌。你使用【杀】对手牌数与装备数均不大于你的角色造成伤害时，此伤害+1。
-             """, characterHitPoint: 4)
+    CardView(character: jiedabao)
 }

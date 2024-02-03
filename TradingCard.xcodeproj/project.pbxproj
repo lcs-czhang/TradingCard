@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E10AE7852B6E952C00D05A42 /* TradingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10AE7842B6E952C00D05A42 /* TradingCard.swift */; };
 		E17981F92B5EADD3008DC5C5 /* TradingCardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17981F82B5EADD3008DC5C5 /* TradingCardApp.swift */; };
 		E17981FB2B5EADD3008DC5C5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17981FA2B5EADD3008DC5C5 /* ContentView.swift */; };
 		E17981FD2B5EADD6008DC5C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E17981FC2B5EADD6008DC5C5 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E10AE7842B6E952C00D05A42 /* TradingCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradingCard.swift; sourceTree = "<group>"; };
 		E17981F52B5EADD3008DC5C5 /* TradingCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TradingCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E17981F82B5EADD3008DC5C5 /* TradingCardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradingCardApp.swift; sourceTree = "<group>"; };
 		E17981FA2B5EADD3008DC5C5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -36,6 +38,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E10AE7862B6E953200D05A42 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E10AE7842B6E952C00D05A42 /* TradingCard.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E10AE7872B6E955400D05A42 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E17981FA2B5EADD3008DC5C5 /* ContentView.swift */,
+				E179820E2B5EAF20008DC5C5 /* IntroView.swift */,
+				E179820C2B5EAEDC008DC5C5 /* CardView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		E17981EC2B5EADD2008DC5C5 = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +76,8 @@
 			isa = PBXGroup;
 			children = (
 				E17981F82B5EADD3008DC5C5 /* TradingCardApp.swift */,
-				E17981FA2B5EADD3008DC5C5 /* ContentView.swift */,
-				E179820C2B5EAEDC008DC5C5 /* CardView.swift */,
-				E179820E2B5EAF20008DC5C5 /* IntroView.swift */,
+				E10AE7862B6E953200D05A42 /* Model */,
+				E10AE7872B6E955400D05A42 /* View */,
 				E17981FC2B5EADD6008DC5C5 /* Assets.xcassets */,
 				E17981FE2B5EADD6008DC5C5 /* Preview Content */,
 			);
@@ -146,6 +165,7 @@
 				E17981FB2B5EADD3008DC5C5 /* ContentView.swift in Sources */,
 				E179820F2B5EAF20008DC5C5 /* IntroView.swift in Sources */,
 				E17981F92B5EADD3008DC5C5 /* TradingCardApp.swift in Sources */,
+				E10AE7852B6E952C00D05A42 /* TradingCard.swift in Sources */,
 				E179820D2B5EAEDC008DC5C5 /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

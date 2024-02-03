@@ -10,25 +10,23 @@ import SwiftUI
 struct IntroView: View {
     
     // MARK: Stored properties
-    let characterName: String
-    let characterReference: String
-    let imageName: String
+    let character: TradingCard
     
     // MARK: Computed properties
     var body: some View {
         HStack {
             
-            Image(imageName)
+            Image(character.imageName)
                 .resizable()
                 .scaledToFit()
                 .frame(width: 40)
-                .padding(.trailing, 15)
+                .clipShape(Circle())
             
             VStack {
                 VStack(alignment: .leading) {
-                    Text(characterName)
+                    Text(character.characterName)
                         .font(.headline)
-                    Text(characterReference)
+                    Text(character.characterReference)
                         .font(.footnote)
                 }
             }
@@ -38,5 +36,5 @@ struct IntroView: View {
 }
 
 #Preview {
-    IntroView(characterName: "界徐盛", characterReference: "犯大吴疆土者盛必击而破之", imageName: "jiedabaotou")
+    IntroView(character: jiedabao)
 }
